@@ -1,0 +1,173 @@
+#
+# system.prop for mtk8176 (mtk8173) Cappu
+#
+
+
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+#
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+#Display
+ro.opengles.version=196610
+ro.hardware.gralloc=mt8173.img
+ro.sf.lcd_density=320
+
+#Dalvik
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+ro.zygote.preload.enable=0
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=384m
+dalvik.vm.dex2oat-min-free-mem=209715200
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.isa.arm.variant=cortex-a15
+dalvik.vm.isa.arm.features=default
+
+#DNS
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+#Enable navbar (softkey)
+qemu.hw.mainkeys=1
+
+#Kernel Selinux
+ro.kernel.zio=38,108,105,16
+ro.boot.selinux=disable
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_response_time=1
+# factory mode config
+sys.mtk.no.factoryimage=1
+# disable ipo for development
+sys.ipo.disable=1
+# HMDI 4K setting UI config
+ro.mtk_hdmi_4k_support=1
+
+#more info from buildprop
+persist.sys.job_delay=true
+persist.sys.mcd_config_file=/system/etc/mcd_default.conf
+persist.sys.perf.debug=true
+persist.sys.klo=on
+persist.sys.whetstone.level=2
+ro.ss.version=5.1.111-004
+ro.ss.nohidden=true
+ro.btconfig.if=uart
+ro.btconfig.dev=/dev/ttyMT1
+ro.btconfig.vendor=broadcom
+ro.btconfig.chip=BCM4356
+ro.radio.noril=true
+ro.mediatek.platform=MT8173
+ro.mediatek.chip_ver=S01
+ro.mtk_key_manager_kb_path=1
+ril.specific.sm_cause=0
+ro.sf.hwrotation=0
+persist.radio.fd.counter=150
+persist.radio.fd.off.counter=50
+persist.radio.fd.r8.counter=150
+persist.radio.fd.off.r8.counter=50
+drm.service.enabled=true
+mtk_in_house_tee_support=true
+fmradio.driver.enable=0
+ril.first.md=1
+ril.flightmode.poweroffMD=0
+ril.telephony.mode=0
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
+mediatek.wlan.chip=MT6630
+mediatek.wlan.module.postfix=_mt6630
+ril.radiooff.poweroffMD=0
+ro.mtk_protocol1_rat_config=no
+ro.mtk_support_mp2_playback=1
+ro.mediatek.version.branch=alps-mp-n0.mp12.tc8sp
+ro.mediatek.version.release=alps-mp-n0.mp12.tc8sp
+ro.mediatek.version.sdk=4
+ro.num_md_protocol=2
+ro.mtk_besloudness_support=1
+ro.mtk_wappush_support=1
+ro.mtk_audio_tuning_tool_ver=V1
+ro.mtk_wlan_support=1
+ro.mtk_omacp_support=1
+ro.mtk_dhcpv6c_wifi=1
+ro.have_aacencode_feature=1
+ro.mtk_fd_support=1
+ro.mtk_oma_drm_support=1
+ro.mtk_cta_drm_support=1
+ro.mtk_widevine_drm_l3_support=1
+ro.mtk_eap_sim_aka=1
+ro.mtk_flv_playback_support=1
+ro.mtk_wmv_playback_support=1
+ro.mtk_send_rr_support=1
+ro.mtk_emmc_support=1
+ro.mtk_tetheringipv6_support=1
+ro.telephony.default_network=0
+ro.mtk_shared_sdcard=1
+ro.mtk_aal_support=1
+ro.mtk_ultra_dimming_support=1
+ro.mtk_pq_support=2
+ro.mtk_pq_color_mode=1
+ro.mtk_miravision_support=1
+ro.mtk_blulight_def_support=1
+ro.mtk_wifi_mcc_support=1
+ro.mtk_sim_hot_swap=1
+ro.mtk_bip_scws=1
+ro.mtk_wfd_hdcp_tx_support=1
+ro.mtk_world_phone_policy=0
+ro.mtk_perfservice_support=1
+ro.mtk_cta_set=1
+ro.mtk_key_manager_support=1
+ro.mtk_cam_mfb_support=0
+ro.mtk_cam_cfb=1
+ro.mtk_cam_vfb=1
+ro.mtk_external_sim_only_slots=0
+ro.mtk_bg_power_saving_support=1
+ro.mtk_bg_power_saving_ui=1
+ro.have_aee_feature=1
+ro.sim_me_lock_mode=0
+ro.mtk_dual_mic_support=0
+ro.mtk_is_tablet=0
+persist.mtk_vilte_support=0
+ro.mtk_vilte_ut_support=0
+wfd.dummy.enable=0
+wfd.iframesize.level=0
+ro.mediatek.project.path=device/xiaomi/cappu
+ro.mtk_sec_video_path_support=1
+persist.mtk.wcn.combo.chipid=-1
+persist.mtk.wcn.patch.version=-1
+persist.mtk.wcn.dynamic.dump=0
+service.wcn.driver.ready=no
+service.wcn.coredump.mode=0
+persist.mtk.connsys.poweron.ctl=0
+persist.radio.mobile.data=0,0
+persist.meta.dumpdata=0
+ro.media.maxmem=500000000
+
+#FRP
+ro.frp.pst=/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/frp
+
+#SDCARDFS
+ro.sys.sdcardfs=1
+
+
