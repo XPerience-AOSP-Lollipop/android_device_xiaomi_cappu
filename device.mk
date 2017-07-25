@@ -31,7 +31,6 @@ endif
 PRODUCT_COPY_FILES += \
    $(LOCAL_KERNEL):prebuilt/kernel
 
-
 # Bluetooth                            
 PRODUCT_PACKAGES += \
     audio.a2dp.default 
