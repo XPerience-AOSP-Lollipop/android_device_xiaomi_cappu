@@ -16,7 +16,7 @@
 LOCAL_PATH := device/xiaomi/cappu
 
 # Screen density
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi tvdpi
 PRODUCT_AAPT_CONFIG := normal
 
 # Dalvik/HWUI
