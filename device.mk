@@ -98,3 +98,29 @@ PRODUCT_PACKAGES += \
    libmtk_symbols \
    libstlport
 
+#Ramdisk
+PRODUCT_PACKAGES += \
+    enableswap.sh \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    fstab.mt8173 \
+    init \
+    init.connectivity.rc \
+    init.aee.rc \
+    init.fon.rc \
+    init.goldfish.rc \
+    init.modem.rc \
+    init.mt8173.rc \
+    init.mt8173.usb.rc \
+    init.project.rc \
+    init.protect.rc \
+    init.recovery.hardware.rc \
+    init.usb.configfs.rc \
+    init.usb.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    ueventd.mt8173.rc
+
