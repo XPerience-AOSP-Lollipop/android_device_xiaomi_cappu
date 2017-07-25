@@ -98,7 +98,7 @@ LOCAL_SRC_FILES    := etc/init.mt8173.usb.rc
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
-vinclude $(CLEAR_VARS)
+include $(CLEAR_VARS)
 LOCAL_MODULE       := init.project.rc
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
