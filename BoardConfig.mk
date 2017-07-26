@@ -112,7 +112,7 @@ MTK_IRTX_SUPPORT :=true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.mt8173
 
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 

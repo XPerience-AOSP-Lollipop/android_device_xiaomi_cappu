@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/Conf_MultipleTest.ini:system/etc/Conf_MultipleTest.ini \
     $(LOCAL_PATH)/audio/Conf_MultipleTest_0x01.ini:system/etc/Conf_MultipleTest_0x01.ini \
-    $(LOCAL_PATH)/audio/Conf_MultipleTest_0x02:system/etc/Conf_MultipleTest_0x02 \
+    $(LOCAL_PATH)/audio/Conf_MultipleTest_0x02.ini:system/etc/Conf_MultipleTest_0x02.ini \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:system/etc/default_volume_tables.xml \
     $(LOCAL_PATH)/audio/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/audio/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
