@@ -162,3 +162,5 @@ WIFI_DRIVER_STATE_CTRL_PARAM := /dev/wmtWifi
 WIFI_DRIVER_STATE_ON := 1
 WIFI_DRIVER_STATE_OFF := 0
 
+# Inherit from the proprietary version
+-include vendor/xiaomi/cappu/BoardConfigVendor.mk

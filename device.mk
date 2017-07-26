@@ -22,6 +22,7 @@ PRODUCT_AAPT_CONFIG += xlarge large
 # Dalvik/HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, vendor/xiaomi/cappu/cappu-vendor.mk)
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
@@ -46,6 +47,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudio-resampler \
     tinymix \
+    tinypcminfo \
+    tinyplay \
+    tinycap \
     libtinyalsa
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
