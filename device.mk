@@ -16,11 +16,12 @@
 LOCAL_PATH := device/xiaomi/cappu
 
 # Screen density
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi tvdpi
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_CONFIG += xlarge large
 
 # Dalvik/HWUI
-$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
